@@ -1,0 +1,11 @@
+version: '2'
+services:
+  bassmaster:
+    image: 'dockersecplayground/bassmaster:latest'
+    stdin_open: true
+    tty: true
+    ports:
+      - '8081:8080'
+    volumes:
+      - './bassmaster:/bassmaster'
+networks: {}
